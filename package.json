@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "rest api para u8n ecommerce con el stack de mern",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server.js",
+    "start": "node ./server.js"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express",
+    "js",
+    "mongodb",
+    "rest",
+    "api",
+    "ecommerce"
+  ],
+  "author": "José Alvarado",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20"
+  }
+}
