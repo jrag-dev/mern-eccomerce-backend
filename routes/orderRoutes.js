@@ -33,7 +33,6 @@ orderRouter.post('/',
 orderRouter.get('/:id',
   isAuth,
   expressAsyncHandler( async (req, res, next) => {
-    console.log(req.params)
     const order = await Order.findById({ _id: req.params.id })
 
     if (order) {
@@ -49,7 +48,7 @@ orderRouter.get('/:id',
 orderRouter.get('/',
   isAuth,
   expressAsyncHandler( async (req, res, next) => {
-    const orders = await Order.find({})
+    const orders = await Order.find({ user: req.user})
 
     console.log(orders)
 
